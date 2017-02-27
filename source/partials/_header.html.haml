@@ -1,0 +1,28 @@
+!!!
+%html
+    %head
+        %meta{:charset => "utf-8"}/
+        %meta{:content => "IE=edge;chrome=1", "http-equiv" => "X-UA-Compatible"}/
+        %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+        %meta{:content => "Download Kajian Video dan Audio Mp3 Agama Islam Gratis", :name => "Description"}/
+        %meta{:content => "islam, download, gratis, video, audio, mp3, khalid basalamah", :name => "Keywords"}/
+        %meta{:content => "Kajian Islampedia", :property => "og:title"}/
+        %meta{:content => "website", :property => "og:type"}/
+        %meta{:content => "https://unsplash.it/200/300/?random", :property => "og:url"}/
+        %meta{:content => "https://unsplash.it/400/600/?random", :property => "og:image"}/
+
+        %title
+            Kajian Islampedia #{'- ' + current_article.title unless current_article.nil?}
+
+        = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+        = javascript_include_tag 'vendor/jquery.min.js', 'vendor/semantic-ui.js', 'app.js'
+        = stylesheet_link_tag 'all'
+
+    %body
+        -# Navigation
+        .ui.secondary.pointing.menu.large
+            .ui.container
+                .header.item
+                    kajian.islampedia.id
+                %a.active.item{:href => '/'}
+                    Beranda
