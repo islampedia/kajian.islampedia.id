@@ -13,14 +13,9 @@ gem "middleman", "~> 4.1"
 gem "middleman-blog"
 gem 'middleman-livereload'
 
-# Sprockets
-gem "middleman-sprockets"
-
-# Markdown support
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
 
-# For post summaries
-gem "nokogiri"
+gem 'slim'
