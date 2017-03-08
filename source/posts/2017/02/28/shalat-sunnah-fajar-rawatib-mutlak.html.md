@@ -1,7 +1,7 @@
 ---
 title: "Shalat Sunnah Fajar, Rawatib, Mutlak"
 video: https://www.youtube.com/embed/H1a12WS5M30
-videoplaceholder: https://unsplash.it/500/615?image=1080
+videoplaceholder: https://unsplash.it/400/200?image=1080
 date: 2017-02-28 15:39 UTC+7
 tags: khalid basalamah
 author: Islampedia

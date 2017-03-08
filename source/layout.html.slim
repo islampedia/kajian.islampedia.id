@@ -8,11 +8,14 @@ html
       | Blog Title
       = ' - ' + current_article.title unless current_article.nil?
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
-    link[href="//cdn.muicss.com/mui-0.9.9/css/mui.min.css" rel="stylesheet" type="text/css"]
     = stylesheet_link_tag "app"
-    script[src="//cdn.muicss.com/mui-0.9.9/js/mui.min.js"]
   body
-    = partial "shared/sidebar"
-    main#content.mui-container-fluid role="main"
+    main.container role="main"
+      header.header
+        h1
+          = link_to "Kajian Islampedia", "/", class: "header__title"
+        p Download Gratis Video dan Audio MP3
+      .mui-divider
       = yield
+      .mui-divider
       = partial 'shared/footer'

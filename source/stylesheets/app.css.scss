@@ -1,43 +1,48 @@
-html,
-body {
-  height: 100%;
+@import 'mui';
+
+.container {
+  @extend .mui-container-fluid;
+  width: 960px;
 }
 
-html,
-body,
-input,
-textarea,
-buttons {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+.mui-divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-
-/**
- * Sidebar CSS
- */
-#sidebar {
-  background-color: #E57373;
-  padding: 15px;
-}
-
-@media (min-width: 768px) {
-  #sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 180px;
-    height: 100%;
-    padding-top: 30px;
+.header {
+  &__title {
+    color: inherit;
   }
 }
 
-/**
- * Content CSS
- */
-@media (min-width: 768px) {
-  #content {
-    margin-left: 180px;
+.card {
+  transition: box-shadow 1s;
+  border-radius: 2px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 20px;
+
+  &:hover {
+    @extend .mui--z3;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__content {
+    padding: 0 16px 16px;
+  }
+}
+
+.post {
+  &__meta {
+    margin-bottom: 20px;
+
+    &__time {
+      @extend .mui--text-dark-secondary;
+      margin-right: 10px;
+    }
   }
 }

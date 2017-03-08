@@ -1,7 +1,7 @@
 ---
 title: "Kisah Anak Berbakti Kepada Orang Tua"
 video: https://www.youtube.com/embed/C95Q2gNxPyU
-videoplaceholder: https://unsplash.it/500/615?image=1081
+videoplaceholder: https://unsplash.it/400/200?image=1081
 date: 2017-03-04 23:00 UTC+7
 tags: khalid basalamah
 author: Islampedia

@@ -1,7 +1,7 @@
 ---
 title: "Laki - Laki Tidak Shalat di Masjid Apakah Berdosa?"
 video: https://www.youtube.com/embed/Y7Hol_VIqwM
-videoplaceholder: https://unsplash.it/500/615?image=1079
+videoplaceholder: https://unsplash.it/400/200?image=1079
 date: 2017-02-27 08:03 UTC+7
 tags: khalid basalamah
 author: Islampedia
