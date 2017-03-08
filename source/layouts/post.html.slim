@@ -8,6 +8,6 @@
       - current_page.tags.each do |tag|
         = link_to "##{tag}", tag_path(tag)
     p
-      iframe width="853" height="480" src="https://www.youtube.com/embed/ftxOr0k-4xY" frameborder="0" allowfullscreen="true"
+      iframe width="853" height="480" src="#{current_page.data.video}" frameborder="0" allowfullscreen="true"
     p
       = yield
