@@ -3,13 +3,13 @@ pageable: true
 ---
 .mui-row
   - page_articles.each_with_index do |article, i|
-    .mui-col-xs-12.mui-col-md-4
+    .mui-col-md-4
       .card
-        img.card__image src="#{article.data.videoplaceholder}"
+        = link_to article, class: "card__link" do
+          img.card__link__image src="#{article.data.videoplaceholder}"
         .card__content
-          h3
-            = link_to article.title, article
-          p= article.data.summary
+          h2.mui--text-title
+            = link_to article.title, article, class: "card__content__link mui--text-dark"
           - article.tags.each do |tag|
             = link_to "##{tag}", tag_path(tag)
 
