@@ -3,7 +3,7 @@
     h2.mui--text-headline
       = current_page.data.title
     .post__meta
-      time.post__meta__time
+      time.post__meta__time.mui--divider-right
         = current_page.date.strftime('%e %B %Y')
       - current_page.tags.each do |tag|
         = link_to "##{tag}", tag_path(tag)

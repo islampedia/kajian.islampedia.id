@@ -3,7 +3,7 @@ pageable: true
 ---
 .mui-row
   - page_articles.each_with_index do |article, i|
-    .mui-col-md-4
+    .mui-col-xs-12.mui-col-md-4
       .card
         = link_to article, class: "card__link" do
           img.card__link__image src="#{article.data.videoplaceholder}"
