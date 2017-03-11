@@ -2,26 +2,29 @@
 pageable: true
 per_page: 50
 ---
-h2.mui--text-headline
-  | Artikel Dengan Tag '
-  = tagname
-  | '
-- if paginate && num_pages > 1
-  p
-    | Halaman 
-    = page_number
-    |  dari 
-    = num_pages
-  - if prev_page
+
+article.post
+  h2.mui--text-headline
+    | Artikel Dengan Tag '
+    = tagname
+    | '
+  .mui-divider
+  - if paginate && num_pages > 1
     p
-      = link_to 'Sebelumnya', prev_page
-ul
-  - page_articles.each_with_index do |article, i|
-    li
-      = link_to article.title, article
-      span
-        = " - #{article.date.strftime('%b %e %Y')}"
-- if paginate
-  - if next_page
-    p
-      = link_to 'Selanjutnya', next_page
+      | Halaman 
+      = page_number
+      |  dari 
+      = num_pages
+    - if prev_page
+      p
+        = link_to 'Sebelumnya', prev_page
+  ul
+    - page_articles.each_with_index do |article, i|
+      li
+        = link_to article.title, article
+        span
+          = " - #{article.date.strftime('%b %e %Y')}"
+  - if paginate
+    - if next_page
+      p
+        = link_to 'Selanjutnya', next_page
