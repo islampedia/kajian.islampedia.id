@@ -1,0 +1,21 @@
+- if paginate
+  .mui-row
+    .mui-col-md-2.mui-col-md-offset-4
+      - if prev_page && num_pages > 1
+        = link_to prev_page, class: "pagination pagination-active" do
+          span
+            | Sebelumnya
+      - else
+        .pagination
+          span.pagination__disabled
+            | Sebelumnya
+
+    .mui-col-md-2
+      - if next_page
+        = link_to next_page, class: "pagination pagination-active" do
+          span
+            | Selanjutnya
+      - else
+        .pagination
+          span.pagination__disabled
+            | Selanjutnya

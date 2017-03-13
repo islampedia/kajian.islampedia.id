@@ -109,3 +109,27 @@ iframe {
   height: 100%;
   width: 100%;
 }
+
+.pagination {
+  background: #fff;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: block;
+  color: rgba(0, 0, 0, 0.87);
+
+  &__disabled {
+    color: #bababa;
+  }
+}
+
+.pagination-active {
+  @extend .mui--z2;
+  transition: box-shadow 1s;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
