@@ -8,7 +8,7 @@ pageable: true
         = link_to article, class: "card__link" do
           img.card__link__image src="#{article.data.videoplaceholder}"
         .card__content
-          h2.mui--text-title
+          h2.card__content__title
             = link_to article.title, article, class: "card__content__link mui--text-dark"
           - article.tags.each do |tag|
             = link_to "##{tag}", tag_path(tag)
