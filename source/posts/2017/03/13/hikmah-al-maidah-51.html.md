@@ -5,7 +5,7 @@ videoplaceholder: https://unsplash.it/400/200?image=1063
 date: 2017-03-13 22:05 UTC+7
 tags: syafiq riza basalamah
 author: Islampedia
-summary: Download gratis video dan MP3 kajian hikma Al Maidah 51
+summary: Download gratis video dan MP3 kajian hikmah Al Maidah 51
 ---
 
 Sumber Video: <https://www.youtube.com/watch?v=AjAlqL_Jda4>
