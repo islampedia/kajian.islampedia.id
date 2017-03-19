@@ -19,7 +19,7 @@ html
     = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
     = stylesheet_link_tag "app"
     = partial 'shared/ga'
-  body
+  body.body
     main.container role="main"
       header.header
         h1
