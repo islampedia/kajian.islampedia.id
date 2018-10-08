@@ -13,4 +13,4 @@
         = yield
     .tag.mui-panel
       - current_page.tags.each do |tag|
-        = link_to "##{tag}", tag_path(tag)
+        = link_to "##{tag}", tag_path(tag), class: 'tag-link'
